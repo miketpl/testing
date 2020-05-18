@@ -1,0 +1,97 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <style>
+    .btn-primary,
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:visited,
+    .btn-primary:focus {
+        color: orange;
+        transition-duration: 0.4s;
+        background-color: #130f70;
+        border-color: #130f70;
+    }
+</style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="{% static 'main/custom.css' %}">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/jpg" href="{% static 'main/cigaw_logo.jpg' %}">
+
+  <title>CiGaW</title>
+</head>
+<body>
+  <nav id="topNav" class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+          <img src="{% static 'main/cigaw_logo.jpg' %}" width="100" Height="100" class="d-inline-block align-top" href="{% url 'home' %}"</img>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="{% url 'home' %}" style="margin-right:30px;width:120" class="btn btn-primary">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'home' %}" style="margin-right:30px;width:120" class="btn btn-primary">New</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'home' %}" style="margin-right:30px;width:120" class="btn btn-primary">Create</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'home' %}" style="margin-right:30px;width:120" class="btn btn-primary">Think!</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'about' %}" style="margin-right:30px;width:120" class="btn btn-primary">Ask</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'about' %}" style="margin-right:30px;width:120" class="btn btn-primary">Say Hi</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'blog:all_blogs' %}" style="margin-right:30px;width:120" class="btn btn-primary">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'about' %}" style="margin-right:30px;width:120" class="btn btn-primary">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'about' %}" style="margin-right:30px;width:120" class="btn btn-primary">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/in/michael-irwin-0186b11a9/" style="margin-right: 30px" target="_blank" class="fa fa-linkedin"></a>
+            </li>
+            <li class="nav-item">
+              <a  href="https://twitter.com/cigaw" style="margin-right: 30px" target="_blank" class="fa fa-twitter"></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/?stype=lo&jlou=AferkZcEEGYbJfkB6WtClF26B4yKtow0X0YM6vF4kTPn3tEGgNIduzqHbhKm6xylFZ--npl2go8fBMEHc3sYzd8m8WRnhcAb_3gyphryvLzSFA&smuh=55435&lh=Ac-yTp0ti9emU0l2"
+              style="margin-right: 30px" target="_blank" class="fa fa-facebook"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<div class="container text-center"
+
+{% block content %}{% endblock %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
