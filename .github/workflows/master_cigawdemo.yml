@@ -30,4 +30,4 @@ jobs:
       with:
         app-name: 'cigawdemo'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9967d3a939804cdc822b2ea2acc9a4c0 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_34eda435d9c84369b42340035ad3e5ee }}
